@@ -1,0 +1,71 @@
+@charset "UTF-8";
+*{margin: 0px;padding: 0px}
+li{list-style:none; color:#fff }
+a{text-decoration: none;color:#fff}
+.wrapper{width:1300px; height:1000px; background:#fff;background-size: 1300px 1000px;background-repeat:no-repeat;margin: 0px auto;border: 0px solid #000000 ;}
+.Main-Menu>ul>li{ float:left; padding:12px 81px;position: relative;border-right: 1px solid #fff;top: 0px;border-radius:35px } /*Bỏ dấu chấm thứ tự,đưa lên hàng ngang,khoảng cách trên dưới trái phải*/
+.clear{clear: both;}
+.Main-Menu{background: #4791f0;margin-top: 9px;}/*Background thanh menu*/
+.Main-Menu>ul>li>ul{display:none;}
+.Main-Menu>ul>li:hover ul{display:block;position:absolute;background:#4791f0 ;top:42px;left:0px;right:0px;}
+.Main-Menu ul li:hover{background:#2b5993 ;transition: all 0.25s;}
+.Main-Menu>ul>li>ul>li{padding: 5px 10px;border-bottom: 1px solid #FDFDFD;}
+.Main-Menu>ul>li>ul.Sub-Menu>li>ul{display: none}
+.Main-Menu>ul>li>ul.Sub-Menu>li>ul{background:#4791f0;left: 100%;top:29px;width: 190px;}
+.Main-Menu ul li ul.Sub-Menu li:hover ul{display: block;position:absolute;background:#4791f0;}
+.Main-Menu>ul>li>ul.Sub-Menu>li>ul>li{padding: 5px 10px;border-bottom:1px solid #FDFDFD;}
+.image{margin-left: 100px;margin-top: -126px;margin-bottom: 0px;width: 400px}
+.button-login
+{
+	box-shadow:inset -4px 19px 0px -20px #e67a73;
+	background-color:#e4685d;
+	border-radius:35px;
+	border:7px solid #ffffff;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:15px 50px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+	margin-left: 1000px;
+	margin-top: 5px;
+	margin-bottom: 0px;
+	position:relative;
+	top:0px;
+	
+}
+.button-login:hover {
+	background-color:#b10202;
+}
+.button-login:active {
+	position:relative;
+	top:0px;
+}
+.button-register
+{
+	box-shadow:inset -4px 19px 0px -20px #e67a73;
+	background-color:#e4685d;
+	border-radius:35px;
+	border:7px solid #ffffff;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:15px 50px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+	margin-left: 1210px;
+	margin-top: 5px;
+	margin-bottom: 0px;
+	position:relative;
+	top:-67.5px;
+	
+}
+.button-register:hover {
+	background-color:#b10202;
+}
+.button-register:active {
+	position:relative;
+	top:-67.5px;
+}

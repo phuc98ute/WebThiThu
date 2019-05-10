@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Trang chủ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <div class="modal show" id="popupa" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalCenterTitle">Thông báo!</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					Đã hết thời gian làm bài!
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger">Về trang chủ</button>
+					<button type="button" class="btn btn-primary">Xem kết quả thi</button>
+				</div>
+			</div>
+		</div>
+  </div> 
+  <script>
+    	var _hours = 0;
+					var _minute = 0;
+					var _seconds = 5;
+					var html = '<div class="alert alert-success"><strong>Success!</strong> Hết thời gian</div>';
+					function demNguoc() {
+
+						if (_seconds != 0 || _hours != 0 || _minute != 0) {
+							if (_seconds == 0 && _minute != 0) {
+								_seconds = 59;
+								_minute--;
+							}
+							else { _seconds--; }
+							document.getElementById("seconds").innerText = _seconds;
+							document.getElementById("minutes").innerText = _minute;
+							document.getElementById("hours").innerText = _hours;
+							setTimeout("demNguoc()", 1000);
+						} else {
+
+
+							$('#popupa').modal('show');
+
+						}
+					}
+					demNguoc();
+  </script>
+				
+</body>
+
+</html>
